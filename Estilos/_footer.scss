@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    font-family: $font-family1;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: $color1;
+    color: white;
+}
+
+.footer-main {
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-columna {
+    width: calc(100% /3);
+    text-align: justify;
+}
+
+.footer-columna h3 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.footer-columna input[type="email"] {
+    border: none;
+    width: 80%;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 10px;
+    font-family: $font-family1;
+}
+
+.footer-columna input[type="submit"] {
+    border: none;
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: $font-family1;
+}
+
+.footer-columna i {
+    color: black;
+}
+.footer-columna p {
+    color: white;
+}
+
+.footer-copy-redes {
+    width: 100%;
+    background-color: black;
+    border-top: 3px solid white;
+}
+
+.main-copy-redes {
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    width: 70%;
+    color: white;
+}
+
+.footer-redes {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-redes a {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .footer-columna {
+        padding: 0 10px;
+    }
+    .footer-columna h3 {
+        font-size: 28px;
+    }
+    .footer-columna p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer-main {
+        padding: 10px 0;
+    }
+    .footer-columna {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footer-columna h3 {
+        margin-bottom: 5px;
+    }
+    .footer-columna i {
+        display: block;
+    }
+    .footer-copy {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-redes {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

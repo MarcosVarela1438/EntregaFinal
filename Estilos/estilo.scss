@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:ital@1&family=Readex+Pro:wght@200;300;500&display=swap');
+
+/* font-family: 'Luxurious Roman', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600&display=swap');
+
+/* font-family: 'Readex Pro', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+// 
+
+// Paleta de colores
+$color1: #ff7f27;
+$color2: blue;
+
+// Letras
+$font-family1: 'Luxurious Roman', cursive;
+$font-family2: 'Readex Pro', sans-serif;
+
+
+.header-container {
+    width: 100%;
+    height: 100px;
+    background-color: $color1;
+    border: 2px black;
+}
+
+.header-main {
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-columna {
+    width: calc(100% /3);
+    text-align: justify;
+}
+
+.header-logo {
+    background-image: url(../Imagen/Logo2.png);
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+
+.header-nombre {
+    background-image: url(../Imagen/Morita.png);
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    position: relative;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-columna:nth-child(2) {
+    width: 45%;
+    text-align: center;
+}
+
+.header-columna:nth-child(1) {
+    width: 25%;
+}
+
+.header-columna:nth-child(3) {
+    width: 30%;
+    height: 80px;
+    text-align: right;
+    line-height: 1;
+    // white-space: wrap;
+}
+
+.header-columna h3 {
+    font-size: 10px;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+    top: -60%;
+}
+.header-columna i {
+    font-size: 8px;
+    color: black;
+    position: relative;
+    top: -90%;
+}
+.header-columna p {
+    font-size: 6px;
+    color: white;
+}
+main {
+    height: auto;
+}
+body {
+    background-color: white;
+}
+
+.section {
+    border: 2px solid black;
+    background-color:black;
+    margin: 50px;
+    padding: 10px;
+    font-family: $font-family1;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20px;
+    font-family: $font-family1;
+}
+
+.parrafo {
+    font-size: 5px;
+    font-family: $font-family1;
+    height: 20px;
+    width: 100%;
+}
+
+/* CONTENEDOR HOME */
+
+/* SECTION*/
+.jumbotron {
+    height: 400px;
+    background-image: url(../Imagen/catering.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+    margin: 5px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: $font-family1; 
+    font-size: 50px;
+}
+
+.jumbotron p {
+    color: white;
+    font-size: 25px;
+    font-family: $font-family1; 
+}
+.btn {
+    background-color: $color1;
+}
+a {
+    color: white;
+    text-transform: none;
+}
+
+/* ARTICLE */
+
+.container-fluid {
+    padding: 30px;
+}
+
+.row h2{
+    text-align: center;
+    color: white;
+    font-family: $font-family1; 
+}
+
+.row h3{
+    font-family: $font-family1; 
+}
+
+.row p{
+    font-family: $font-family1; 
+    text-align: justify;
+}
+.article-izq {
+    /* height: 300px; */
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,127,39,1) 100%);
+}
+
+.article-der {
+    height: 400px;
+    background-image: url(../Imagen/pinches.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* FIN CONTENEDOR HOME */
+
+/* CONTENEDOR CONTACTO */
+
+.contenedor {
+    background-image: url(../Imagen/mix.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.form-titulo {
+    font-family: 'Courier New', Courier, monospace;
+    color: $color1;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.form-label {
+    display: block;
+    color: $color1;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.form-input, .form-textarea {
+    background: rgba(0,0,0,.7);
+    border:none;
+    outline: none;
+    border-bottom: 2px solid $color1;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.btn-submit {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    background: $color1;
+    font-size: 16px;
+    border: none;
+    padding: 15px 0;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn-submit:hover {
+    background: black;
+    color: orange;
+}
+
+/*FIN CONTENEDOR CONTACTO */
+
+/* CONTENEDOR GRID SECCION FOTOS */
+.contenedor-fotos {
+    width: 80%;
+    display: grid;
+    grid-gap: 10px;
+    background-color:white;
+    margin: 5%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item{
+    height: 150px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+ .item1 {
+        background-image: url(../Imagen/Brochet.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item2 {
+        background-image: url(../Imagen/Bocaditos.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item3 {
+        background-image: url(../Imagen/Sandwich.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item4 {
+        background-image: url(../Imagen/Pata1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item5 {
+        background-image: url(../Imagen/Pata2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item6{
+        background-image: url(../Imagen/Carre.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item7 {
+        background-image: url(../Imagen/Carne.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .item8 {
+        background-image: url(../Imagen/Burger.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+/* FIN CONTENEDOR FOTOS */
+
+/* CONTENEDOR NOSOTROS INICIO */
+
+.jumbotron-fluid {
+    height: 400px;
+    background-image: url(../Imagen/Missinplace3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.jumbotronNosotros h2 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: $font-family2;
+}
+
+.jumbotronNosotros p {
+    font-size: 12px;
+    padding: 20px;
+    color: black;
+    font-family: $font-family2;
+}
+
+.caracteristicas {
+    min-height: 200px;
+    width: 90%;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 5%;
+    padding: 5px;
+}
+
+.nosotros {
+    height: 200px;
+    width: 160px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    transition: width 2s, height 2s, transform 2s;
+}
+  
+.nosotros:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+}
+
+.nosotros h3{
+    font-family: $font-family2;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.imagen__nosotros1 {
+    height: 110px;
+    background-image: url(../Imagen/responsabilidad.png);
+    background-size: cover;
+    background-position: center;
+}
+.imagen__nosotros2 {
+    height: 110px;
+    background-image: url(../Imagen/hora.png);
+    background-size: cover;
+    background-position: center;
+}
+.imagen__nosotros3 {
+    height: 110px;
+    background-image: url(../Imagen/low-price.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen__nosotros4 {
+    height: 110px;
+    background-image: url(../Imagen/recomendar.png);
+    background-size: cover;
+    background-position: center;
+}
+.imagen__nosotros5 {
+    height: 110px;
+    background-image: url(../Imagen/fast-delivery.png);
+    background-size: cover;
+    background-position: center;
+}
+.imagen__nosotros6 {
+    height: 110px;
+    background-image: url(../Imagen/comida-recomendada.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nosotros p {
+    color: black;
+    padding: 5px;
+    font-size: 10px;
+}
+
+/* CONTENEDOR NOSOTROS FIN */
+
+/* COMIENZO MQ 360/480 */
+
+@media only screen and (min-width: 360px) and (max-width: 480px ) {
+
+    .header-container {
+        height: 100px;
+        .header-logo {
+            height: 100px;
+        }
+        .header-nombre {
+            height: 100px;
+        }
+        .header-columna {
+            h3 {
+                position: relative;
+                top: -60%;
+                font-size: 10px;
+            }
+            i{
+                position: relative;
+                top: -90%;
+                font-size: 8px;
+            }
+        }
+    }
+
+    .jumbotronNosotros {
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+    
+    .parrafo {
+        font-size: 15px;
+        height: 45px;
+    }
+}
+
+/* FIN MQ 360/480 */
+
+/* COMIENZO MQ 481/780 */
+
+@media only screen and (min-width: 481px) and (max-width: 780px ) {
+
+    .header-container {
+        height: 170px;
+        .header-logo {
+            height: 150px;
+            position: relative;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+        .header-nombre {
+            height: 150px;
+            position: relative;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+        .header-columna {
+            h3 {
+                position: relative;
+                top: -50%;
+                font-size: 15px;
+            }
+            i{
+                position: relative;
+                top: -40%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+    .jumbotronNosotros {
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    
+    .parrafo {
+        font-size: 20px;
+        height: 60px;
+
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }    
+}
+
+/* FIN MQ 481/780 */
+
+/* COMIENZO MQ 781 */
+
+@media only screen and (min-width: 781px) {
+
+    .header-container {
+        height: 250px;
+        .header-logo {
+            height: 220px;
+            position: relative;
+            left: 50%;
+            top: 40%;
+        }
+        .header-nombre {
+            height: 220px;
+            position: relative;
+            left: 50%;
+            top: 40%;
+        }
+        .header-columna {
+            h3 {
+                position: relative;
+                top: -50%;
+                font-size: 20px;
+            }
+            i{
+                position: relative;
+                top: -40%;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .jumbotronNosotros {
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .parrafo {
+        font-size: 30px;
+        height: 70px;
+
+    }
+
+    .contenedor-fotos {
+        grid-template-areas: 
+        "item1 item2 item3"
+        "item1 item4 item5"
+        "item6 item7 item5"
+        "item6 item7 item8"
+        ;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 5%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .item1 {
+        grid-area: item1;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item2 {
+        grid-area: item2;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item3 {
+        grid-area: item3;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item4 {
+        grid-area: item4;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item5 {
+        grid-area: item5;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item6 {
+        grid-area: item6;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item7 {
+        grid-area: item7;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .item8 {
+        grid-area: item8;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@import "_footer"
+
+/* FIN MQ 781 */
